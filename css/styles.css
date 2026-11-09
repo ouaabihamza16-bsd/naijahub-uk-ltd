@@ -145,3 +145,6 @@ address{font-style:normal;line-height:1.7;overflow-wrap:anywhere}
 .card .ico{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#4338ca,#2dd4bf);color:#fff;font-family:var(--mono);font-weight:700;margin-bottom:.9rem}
 .num{background:linear-gradient(135deg,#4338ca,#2dd4bf)}
 .eyebrow{font-family:var(--mono)}
+
+/* draft-preview notice */
+.draft-bar{background:#fff1c9;color:#5a4300;text-align:center;font-size:.88rem;padding:.6rem 1rem;border-bottom:1px solid #ecd58a;line-height:1.4}
