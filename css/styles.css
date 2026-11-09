@@ -148,3 +148,4 @@ address{font-style:normal;line-height:1.7;overflow-wrap:anywhere}
 
 /* draft-preview notice */
 .draft-bar{background:#fff1c9;color:#5a4300;text-align:center;font-size:.88rem;padding:.6rem 1rem;border-bottom:1px solid #ecd58a;line-height:1.4}
+.client-view .draft-bar{display:none}
