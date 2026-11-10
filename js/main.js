@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var CONTACT_EMAIL = 'contact@naijahubukltd.shop';
+  var CONTACT_EMAIL = ''; // set the confirmed business email here to switch the enquiry form on
 
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -48,7 +48,7 @@
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { form.email.classList.add('invalid'); ok = false; }
       if (!message) { form.message.classList.add('invalid'); ok = false; }
       if (!ok) { status.textContent = 'Please complete all fields with a valid email.'; return; }
-      if (document.documentElement.hasAttribute('data-draft')) { status.textContent = 'Draft preview: this form is not active.'; return; }
+      if (!CONTACT_EMAIL) { status.textContent = 'Online enquiries are not available yet. Please check back soon.'; return; }
       var subject = 'Website enquiry from ' + name + (topic ? ' (' + topic + ')' : '');
       var body = message + '\n\n' + name + '\n' + email;
       status.textContent = 'Opening your email app. If nothing happens, email ' + CONTACT_EMAIL + ' directly.';
